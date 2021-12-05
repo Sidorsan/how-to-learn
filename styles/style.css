@@ -85,12 +85,17 @@
 .description {
   margin-top: 100px;
   margin-bottom: 100px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
 }
 
 .description_two-columns {
   display: flex;
   justify-content: space-between;
 
+  min-width: 784px;
+  width: 80%;
   border: 1px solid red;
 
 }
@@ -114,19 +119,32 @@ h2 {
   border: 1px solid red;
 
   width: 80%;
-  min-width: 784px;
+
 
 }
 
-.description_paragraph {
+.description_paragraph1 {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   border: 1px solid red;
   margin-top: 0;
+}
 
+.description_paragraph2 {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  border: 1px solid red;
+  margin: 30px 0;
+}
 
-
+.description_paragraph3 {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  border: 1px solid red;
+  margin-bottom: 0px;
 }
 
 .description_span-accent {
