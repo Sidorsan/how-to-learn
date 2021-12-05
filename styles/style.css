@@ -8,18 +8,133 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
+.bord {
+  border: 1px solid red;
+}
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  display: flex;
+  position: relative;
+  background-color: #f2f2f2;
+  z-index: 0;
+
+
   /* выше установили ограничения для секции */
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
+.logo {
+  width: 183px;
+  height: 32px;
+  background-image: url(../images/logo_place_header.svg);
+  z-index: 1;
+}
+
+
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+
+.header_title {
+  width: 730px;
+  max-height: 200px;
+  line-height: 96px;
+  display: flex;
+  z-index: 1;
+  align-self: center;
+  font-size: 102px;
+  font-weight: bold;
+  margin-left: 64px;
+
+}
+
+.header_subtitle {
+  width: 338px;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  z-index: 1;
+}
+
+.header_link {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.main_illustretion {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.header_square-pic {
   width: 568px;
+  height: 568px;
+  border: 1px solid red;
+  position: absolute;
+  top: 64px;
+  right: 0px;
+  background: #2f80ed;
+  z-index: -1;
+}
+.description {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.description_two-columns {
+  display: flex;
+  justify-content: space-between;
+
+  border: 1px solid red;
+
+}
+
+.description_brief {
+  border: 1px solid red;
+  width: 175px;
+  min-height: 300px;
+
+}
+
+h2 {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+  margin-top: 0;
+}
+
+.description_main-text {
+  border: 1px solid red;
+
+  width: 80%;
+  min-width: 784px;
+
+}
+
+.description_paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  border: 1px solid red;
+  margin-top: 0;
+
+
+
+}
+
+.description_span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
+  border: 1px solid red;
+
 }
 
 /* и элемента с модификатором вида ключ-значение */
