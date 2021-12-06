@@ -8,9 +8,7 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-.bord {
-  border: 1px solid red;
-}
+
 
 .header {
   height: 100vh;
@@ -75,13 +73,13 @@
 .header_square-pic {
   width: 568px;
   height: 568px;
-
   position: absolute;
   top: 64px;
   right: 0px;
   background: #2f80ed;
   z-index: -1;
 }
+
 .description {
   margin-bottom: 100px;
   display: flex;
@@ -113,27 +111,18 @@
   margin: 0;
 }
 
-.description_paragraph1 {
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  margin-top: 0;
-}
-
-.description_paragraph2 {
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  margin: 30px 0;
-}
-
-.description_paragraph3 {
+.description_paragraph {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 
-  margin-bottom: 0px;
+
 }
+
+.paragraph_margin {
+  margin: 30px 0px;
+}
+
 
 .description_span-accent {
   line-height: 34px;
@@ -143,14 +132,13 @@
 
 .digits {
   margin-top: 100px;
-  border: 1px solid red;
   margin-bottom: 100px;
 }
 
 
 
 .section-title{
-  border: 1px solid red;
+
   display: flex;
   width: 60%;
   line-height: 1.15;
@@ -163,7 +151,6 @@
 
 .section-subtitle {
 
-  border: 1px solid red;
   font-size: 24px;
   display: flex;
   margin: 20px auto 0px;
@@ -175,7 +162,7 @@
 
 
 .table {
-  border: 1px solid red;
+
   width: 1100px;
   display: flex;
   flex-wrap: wrap;
@@ -203,13 +190,18 @@
 
 .feynman {
   height: 890px;
-  border: 1px solid red;
+  ;
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: flex-start;
+  background-image: url(../images/feynman.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+
 }
 .feynman_title {
-  border: 1px solid red;
+
   width: 648px;
   line-height: 1.15;
   font-size: 120px;
@@ -217,8 +209,29 @@
   flex-wrap: wrap;
   margin: 0 auto;
   text-align: center;
-
 }
+
+.feynman_subtitle {
+
+  line-height: 51px;
+  font-size: 36px;
+  margin: 70px auto 0px;
+}
+
+.feyman_link {
+  line-height: 51px;
+  font-size: 36px;
+  color: #2f80ed;
+  text-decoration: none;
+
+  position: absolute;
+  right: 48px;
+  top: 50%;
+}
+
+
+
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
