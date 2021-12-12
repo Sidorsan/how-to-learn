@@ -20,13 +20,12 @@
   position: relative;
   background-color: #f2f2f2;
   z-index: 0;
-  margin-bottom: 100px;
-
   /* выше установили ограничения для секции */
 }
 
 .logo {
   width: 183px;
+  height: 32px;
   z-index: 1;
 }
 
@@ -35,12 +34,10 @@
   top: 30px;
   left: 64px;
   background-image: url(../images/logo_place_header.svg);
-  height: 32px;
 }
 
 .header__title {
   width: 730px;
-  max-height: 200px;
   line-height: 96px;
   display: flex;
   z-index: 1;
@@ -51,11 +48,13 @@
 }
 
 .header__subtitle {
-  width: 338px;
+  width: 388px;
   position: absolute;
   bottom: 30px;
   left: 64px;
   z-index: 1;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .header__link {
@@ -85,7 +84,7 @@
   justify-content: space-between;
   min-width: 784px;
   width: 80%;
-  margin: auto;
+  margin: 100px auto;
 }
 
 .two-columns__brief {
@@ -94,7 +93,8 @@
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .two-columns__main-text {
@@ -102,17 +102,13 @@
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin: 0;
 }
 
-.two-columns__paragraph_margin {
-  margin: 30px 0px;
+.two-columns__paragraph {
+  margin: 0px 0px 30px;
 }
 
 .two-columns__span-accent {
@@ -122,22 +118,20 @@
 }
 
 .section-title {
-  display: flex;
   width: 60%;
   line-height: 1.15;
   font-weight: bold;
   font-size: 60px;
-  margin: 100px auto 0px;
-  justify-content: center;
+  margin: 0 auto 0;
+  text-align: center;
 }
 
 .section-subtitle {
   font-size: 24px;
-  display: flex;
   margin: 20px auto 0px;
   width: 60%;
   line-height: 34px;
-  justify-content: center;
+  text-align: center;
 }
 
 .table {
@@ -145,12 +139,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0px auto 100px;
+  margin: 0 auto 0;
 }
 
 .table__cell {
   width: 250px;
-  min-height: 100px;
   margin-top: 60px;
 }
 
@@ -159,15 +152,18 @@
   font-size: 24px;
   font-weight: bold;
   margin: 0;
+  padding: 0px;
 }
 
 .table__text {
   line-height: 1.2;
   font-size: 18px;
   margin: 20px auto 0;
+  padding: 0px;
 }
 
 .feynman {
+  margin: 100px auto 0;
   min-height: 890px;
   display: flex;
   position: relative;
@@ -185,14 +181,15 @@
   font-size: 120px;
   font-weight: bold;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 100px auto 0;
   text-align: center;
 }
 
 .feynman__subtitle {
   line-height: 51px;
   font-size: 36px;
-  margin: 70px auto 0px;
+  margin-top: 70px;
+  text-align: center;
 }
 
 .feynman__link {
@@ -206,7 +203,6 @@
 }
 
 .kaufman {
-  border: 1px solid black;
   background-color: black;
   overflow: hidden;
   display: flex;
@@ -219,22 +215,22 @@
   background-position: top 0px right -210px;
 }
 
-.section-title_margin_theme_dark {
+.section-title_theme_dark {
   margin-top: 90px;
-}
-
-.theme-dark {
   color: white;
 }
 
-.table_margin_theme_dark {
+.section-subtitle_theme-dark {
+  color: white;
+}
+
+.table_theme_dark {
   margin-bottom: 90px;
 }
-/* и элемента с модификатором вида ключ-значение */
+
 .table__cell_theme_dark {
   width: 200px;
   color: white;
-  margin-right: 0;
   margin-top: 80px;
 }
 
@@ -257,18 +253,21 @@
 }
 
 .footer__columns {
-  min-height: 350px;
   width: 90%;
   margin: 60px auto 40px;
   display: flex;
   justify-content: space-between;
 }
 
-.footer__column_content_copyright {
-  flex-basis: 711px;
-  display: inline-flex;
+.footer__column {
+  min-height: 350px;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
 }
 
 .logo_place_footer {
@@ -281,6 +280,7 @@
   font-size: 18px;
   color: white;
   margin: 18px 0;
+  padding: 0;
 }
 
 .footer__heading {
@@ -289,14 +289,14 @@
   font-weight: bold;
   padding: 0px;
   color: white;
+  margin: 0;
 }
 
 .footer__column-links {
-  margin: 20px auto 16px;
+  margin: 20px 0 16px;
   text-decoration: none;
   list-style: none;
   padding: 0px;
-  display: block;
 }
 
 .footer__column-link {
@@ -304,13 +304,16 @@
   font-size: 18px;
   text-decoration: none;
   color: white;
+  padding: 0px;
+  margin: 0px;
 }
 
 .footer__social-icon {
-  margin: auto 10px auto 0px;
+  margin: 0 10px 0 0px;
   display: inline-block;
   width: 16px;
   height: 16px;
+  padding: 0px;
 }
 
 .facebook {
