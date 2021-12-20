@@ -1,69 +1,28 @@
 .br {
   border: 1px solid red;
 }
-.page {
-  min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
-  margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  display: flex;
-  position: relative;
-  background-color: #f2f2f2;
-  z-index: 0;
-}
 
-.logo {
-  width: 183px;
-  height: 32px;
-  z-index: 1;
-}
 
-.logo_place_header {
-  position: absolute;
-  top: 30px;
-  left: 64px;
-  background-image: url(../images/logo_place_header.svg);
-}
 
-.header__title {
-  width: 730px;
-  line-height: 96px;
-  display: flex;
-  z-index: 1;
-  align-self: center;
-  font-size: 102px;
-  font-weight: bold;
-  margin-left: 64px;
-}
 
-.header__subtitle {
-  width: 388px;
-  position: absolute;
-  bottom: 30px;
-  left: 64px;
-  z-index: 1;
-  font-size: 18px;
-  line-height: 25px;
-  margin: 0px;
-}
 
-.header__link {
-  text-decoration: none;
-  color: #2f80ed;
-}
+
+
+
+
+
+
+
 
 .header__main-illustration {
   width: 765px;
@@ -83,6 +42,11 @@
   right: 0px;
   background: #2f80ed;
   z-index: -1;
+
+}
+
+.header__square-pic_rotation {
+  animation: rotation 20s linear infinite;
 }
 
 .two-columns {
