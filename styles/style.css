@@ -4,24 +4,32 @@
 
 .techniques {
   width: 80%;
-  margin: 0 auto;
+  margin: 100px auto;
 
 }
 
 .cards {
   width: 920px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-starts;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 0 auto 0;
+  padding: 0px;
+
+
 }
 
 .cards__item {
 width: 240px;
 padding: 0;
-margin: 0;
+margin-right: 100px;
 list-style-type: none;
+border: 0px;
 
+}
+
+.cards__item:nth-of-type(3) {
+  margin-right: 0px;
 }
 
 .cards__image {
@@ -34,14 +42,39 @@ list-style-type: none;
 .cards__title {
   padding: 0;
   margin: 0;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bolder;
 }
 
-cards__description{
-  padding: 0;
-  margin: 0;
+.cards__description{
+  padding:0;
+  margin: 16px 0 0;
+  text-align: center;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 
+
+
+
+.video__iframes {
+  margin: 50px auto 0;
+  display: flex;
+  justify-content: center;
+}
+
+.video__iframe {
+   width: 515px;
+   height: 316px;
+}
+
+.video__iframe:first-of-type {
+ margin-right: 20px;
+}
 
 
 
@@ -59,7 +92,7 @@ cards__description{
   justify-content: space-between;
   min-width: 784px;
   width: 80%;
-  margin: 100px auto;
+  margin: 100px auto 0;
 }
 
 .two-columns__brief {
